@@ -1,0 +1,29 @@
+# Default project configuration.
+# Every experiment must record its seed and the config it was run with.
+
+seed: 42
+image_size: 64
+
+paths:
+  data: data/
+  splits: splits/
+  models: models/
+  reports: reports/
+  knowledge_base: knowledge_base/
+
+split:
+  train: null       # À VALIDER EN ÉQUIPE
+  val: null         # À VALIDER EN ÉQUIPE
+  test: null        # À VALIDER EN ÉQUIPE
+  stratified: true  # À VALIDER EN ÉQUIPE
+
+baseline: {}
+
+dl: {}
+
+generative: {}
+
+rag:
+  llm_model: "<à choisir>"
+  embedding_model: "<à choisir>"
+  vector_store: "<à choisir>"  # chroma | faiss

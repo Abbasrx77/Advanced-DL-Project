@@ -1,0 +1,45 @@
+# --- Python ---
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+build/
+dist/
+*.egg-info/
+.eggs/
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.coverage
+htmlcov/
+
+# --- Environnements ---
+.venv/
+venv/
+env/
+.env
+.env.*
+
+# --- Jupyter ---
+.ipynb_checkpoints/
+
+# --- IDE / OS ---
+.idea/
+.vscode/
+.DS_Store
+
+# --- Données et poids (jamais dans Git) ---
+data/*
+!data/.gitkeep
+models/*
+!models/.gitkeep
+
+# --- Bases vectorielles ---
+chroma_db/
+**/chroma_db/
+*.faiss
+*.pkl.index
+
+# --- Sorties Gradio ---
+.gradio/
+flagged/
